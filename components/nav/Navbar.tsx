@@ -1,6 +1,7 @@
 import { poppins } from "@/app/layout";
 import DropdownNav from "./DropdownNav";
 import RightsideNav from "./RightsideNav";
+import Link from "next/link";
 
 export type NavElement = {
 	text: string;
@@ -21,9 +22,12 @@ const links: NavElement[] = [
 export default function Navbar() {
 	return (
 		<nav className="flex justify-between items-center">
-			<p className={`${poppins.className} text-slate-100 font-semibold`}>
+			<Link
+				href={"/"}
+				className={`${poppins.className} text-slate-100 font-semibold`}
+			>
 				jaxonhill.xyz
-			</p>
+			</Link>
 			<DropdownNav links={links} />
 			<RightsideNav links={links} />
 		</nav>
