@@ -1,14 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { NavElement } from "./Navbar";
+import { NavElement, SocialInfo } from "./Navbar";
 import { usePathname } from "next/navigation";
 
 interface RightsideNavProps {
 	links: NavElement[];
+	socials: SocialInfo[];
 }
 
-export default function RightsideNav({ links }: RightsideNavProps) {
+export default function RightsideNav({ links, socials }: RightsideNavProps) {
 	const pathname = usePathname();
 
 	return (
