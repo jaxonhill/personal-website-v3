@@ -1,18 +1,17 @@
 ### Navbar
 - [x] Fix highlighting for main navbar
 - [x] Make logo go back to home also
-- [ ] Add "socials" array of social objects with their logos
-- [ ] Add socials as more options in dropdown nav
-- [ ] Add socials dropdown to main page when size is large enough
-- [ ] Add responsive
-- [ ] Organize everything, condense
+- [x] Add "socials" array of social objects with their logos
+- [x] Add socials as more options in dropdown nav
+- [x] Add socials dropdown to main page when size is large enough
+- [x] Add responsive
+- [x] Organize everything, condense
 
 ### Home
-- [ ] Add main header
-- [ ] Add secondary text
+- [x] Add main header
+- [x] Add secondary text
+- [x] Add main button to go to my projects
 - [ ] Add gradient?
-- [ ] Add main button to go to my projects
-- [ ] Add secondary button that is similar dropdown to the socials
 
 ### Projects
 - [ ] Use Notion as a CMS

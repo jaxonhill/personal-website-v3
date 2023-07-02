@@ -1,3 +1,3 @@
 export default function Projects() {
-	return <main></main>;
+	return <main className="text-slate-100">Projects</main>;
 }

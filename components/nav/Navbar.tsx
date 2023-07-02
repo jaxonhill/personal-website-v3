@@ -75,7 +75,7 @@ export default function Navbar() {
 		<nav className="flex justify-between items-center">
 			<Link
 				href={"/"}
-				className={`${poppins.className} text-slate-100 font-semibold`}
+				className={`${poppins.className} text-xl text-slate-100 font-semibold`}
 			>
 				jaxonhill.xyz
 			</Link>

@@ -20,6 +20,7 @@ export default function RightsideNav({ links, socials }: RightsideNavProps) {
 				return (
 					<Link
 						href={link.href}
+						key={link.text}
 						className={`${
 							isActive
 								? "text-slate-100"
@@ -33,6 +34,7 @@ export default function RightsideNav({ links, socials }: RightsideNavProps) {
 			{socials.map((social) => {
 				return (
 					<a
+						key={social.platform}
 						href={social.href}
 						target="_blank"
 						className="group w-full h-full flex gap-2 items-center"

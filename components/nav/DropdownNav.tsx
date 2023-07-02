@@ -4,8 +4,6 @@ import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import {
 	DropdownMenu,
-	DropdownMenuLabel,
-	DropdownMenuSeparator,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
