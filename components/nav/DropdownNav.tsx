@@ -58,18 +58,18 @@ export default function DropdownNav({ links, socials }: DropdownNavProps) {
 							key={social.platform}
 							className="hover:bg-slate-800 cursor-pointer"
 						>
-							<div className="w-full h-full flex justify-between items-center">
-								<a
-									className="w-full h-full text-slate-500"
-									href={social.href}
-									target="_blank"
-								>
+							<a
+								href={social.href}
+								target="_blank"
+								className="group w-full h-full flex justify-between items-center"
+							>
+								<p className="w-full h-full text-slate-500 group-hover:text-slate-100 group-focus:text-slate-100">
 									{social.platform}
-								</a>
-								<i className="w-4 h-4 fill-slate-500">
+								</p>
+								<i className="w-4 h-4 fill-slate-500 group-hover:fill-slate-100 group-focus:fill-slate-100">
 									{social.svgElement}
 								</i>
-							</div>
+							</a>
 						</DropdownMenuItem>
 					);
 				})}
