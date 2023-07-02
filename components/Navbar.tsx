@@ -1,6 +1,6 @@
 import { poppins } from "@/app/layout";
-import Link from "next/link";
 import DropdownNav from "./DropdownNav";
+import RightsideNav from "./RightsideNav";
 
 export type NavElement = {
 	text: string;
@@ -25,14 +25,7 @@ export default function Navbar() {
 				jaxonhill.xyz
 			</p>
 			<DropdownNav links={links} />
-			<div className="gap-6 items-center hidden md:flex">
-				<Link href={"/"} className="text-slate-100">
-					Home
-				</Link>
-				<Link href={"/projects"} className="text-slate-500">
-					Projects
-				</Link>
-			</div>
+			<RightsideNav links={links} />
 		</nav>
 	);
 }
