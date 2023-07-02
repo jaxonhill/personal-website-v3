@@ -1,13 +1,38 @@
-import { Bars3Icon, MoonIcon } from "@heroicons/react/24/outline";
+import { poppins } from "@/app/layout";
+import Link from "next/link";
+import DropdownNav from "./DropdownNav";
+
+export type NavElement = {
+	text: string;
+	href: string;
+};
+
+const links: NavElement[] = [
+	{
+		text: "Home",
+		href: "/",
+	},
+	{
+		text: "Projects",
+		href: "/projects",
+	},
+];
 
 export default function Navbar() {
 	return (
-		<div className="text-slate-900 flex justify-between items-center my-6">
-			<p className="font-semibold">jaxonhill.xyz</p>
-			<div className="flex gap-4 items-center">
-				<Bars3Icon className="w-6 h-6" />
-				<MoonIcon className="w-6 h-6" />
+		<nav className="flex justify-between items-center">
+			<p className={`${poppins.className} text-slate-100 font-semibold`}>
+				jaxonhill.xyz
+			</p>
+			<DropdownNav links={links} />
+			<div className="gap-6 items-center hidden md:flex">
+				<Link href={"/"} className="text-slate-100">
+					Home
+				</Link>
+				<Link href={"/projects"} className="text-slate-500">
+					Projects
+				</Link>
 			</div>
-		</div>
+		</nav>
 	);
 }
