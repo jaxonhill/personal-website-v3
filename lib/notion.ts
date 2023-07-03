@@ -1,5 +1,13 @@
 import { Client } from "@notionhq/client";
 
+type NotionResponse = {
+    results: NotionResultsObject[];
+}
+
+type NotionResultsObject = {
+    properties: any;
+}
+
 export async function getAllProjects() {
     try {
     // Connect to Notion
@@ -16,9 +24,22 @@ export async function getAllProjects() {
             status: {
                 equals: "published",
             }
-        }
+        },
+        sorts: [
+            {
+                property: "created_at",
+                direction: "ascending",
+            }
+        ]
+    }) as NotionResponse;
+
+    // Get the results from the response
+    const results: NotionResultsObject[] = response.results;
+
+    // Map over the results and only get the information needed
+    return results.map((result) => {
+        return result.properties;
     });
-    return response;
 
     // Catch any errors if not connected to Notion
     } catch (error: unknown) {
