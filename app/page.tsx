@@ -1,6 +1,4 @@
 import { poppins } from "./layout";
-import { Button } from "@/components/ui/button";
-import { buttonVariants } from "@/components/ui/button";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 

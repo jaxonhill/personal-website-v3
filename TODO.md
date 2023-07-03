@@ -14,9 +14,9 @@
 - [ ] Add gradient?
 
 ### Projects
-- [ ] Use Notion as a CMS
-  - [ ] Have a CMS for the actual technologies with an official name, array of nicknames, and small image of the logo
-  - [ ] Have a second CMS for the projects, but with an array of the technologies that are linked to the other CMS
+- [ ] Create some sort of CMS with markdown and JSON
+- [ ] Add loading state for the content, make artifial promise to test this
+- [ ] Add error state for the content, make artificial error to test this
 - [ ] Add heading
 - [ ] Add search bar
 - [ ] Add filters drop down
