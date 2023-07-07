@@ -1,6 +1,7 @@
 import { getAllProjects } from "@/lib/notion";
 import { poppins } from "../layout";
 import Image from "next/image";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 type Technology = {
 	logoPath: string;
@@ -72,7 +73,7 @@ export default async function Projects() {
 			<div className="grid grid-flow-row grid-cols-1 w-full">
 				{projects.map((project) => {
 					return (
-						<div className="border-2 border-slate-800 p-6 rounded-2xl">
+						<div className="border-2 border-slate-800 p-6 rounded-2xl shadow-white">
 							<div className="w-full aspect-video relative">
 								<Image
 									src={project.imageURL}
@@ -82,11 +83,11 @@ export default async function Projects() {
 								/>
 							</div>
 							<p
-								className={`${poppins.className} text-2xl font-bold text-slate-100 pt-4 pb-2`}
+								className={`${poppins.className} text-2xl font-bold text-slate-100 pt-6 pb-4`}
 							>
 								{project.title}
 							</p>
-							<div className="flex w-full gap-2 pb-3">
+							<div className="flex w-full gap-2 pb-4">
 								{project.technologies.map((technology) => {
 									return (
 										<div className="w-6 h-6 aspect-square relative">
@@ -106,13 +107,31 @@ export default async function Projects() {
 									);
 								})}
 							</div>
-							<p className="text-slate-400 pb-4">
+							<p className="text-slate-400 pb-6">
 								{project.description}
 							</p>
-							<div className="w-full flex justify-end">
-								{!project.github_url ? (
+							<div className="w-full flex justify-end gap-4">
+								{project.live_site_url ? (
 									<a
-										href={""}
+										href={project.live_site_url}
+										className="flex items-center gap-2 rounded-lg font-medium py-2 px-4 w-fit bg-slate-100 text-slate-950 hover:bg-slate-100/90"
+									>
+										<p className="text-slate-950">
+											Live Site
+										</p>
+										<ArrowUpRightIcon className="text-slate-950 w-4 h-4" />
+									</a>
+								) : (
+									<div className="flex items-center gap-2 rounded-lg font-medium py-2 px-4 w-fit opacity-30 bg-slate-100 text-slate-950 cursor-not-allowed">
+										<p className="text-slate-950">
+											Live Site
+										</p>
+										<ArrowUpRightIcon className="w-4 h-4 text-slate-950" />
+									</div>
+								)}
+								{project.github_url ? (
+									<a
+										href={project.github_url}
 										className="flex items-center gap-2 rounded-lg font-medium py-2 px-4 w-fit bg-slate-100 text-slate-950 hover:bg-slate-100/90"
 									>
 										<p className="text-slate-950">Github</p>
