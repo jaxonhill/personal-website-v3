@@ -1,7 +1,7 @@
 import { NavElement, SocialInfo } from "@/types";
 import { poppins } from "@/app/layout";
 import Link from "next/link";
-import DropdownNav from "./DropdownNav";
+import DropdownNav from "./dropdown/DropdownNav";
 import RightsideNav from "./RightsideNav";
 
 // Objects that hold name of link and href

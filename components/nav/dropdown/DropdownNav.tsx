@@ -1,8 +1,7 @@
 "use client";
 
 import { NavElement, SocialInfo } from "@/types";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import LinksSectionDropdown from "./LinksSectionDropdown";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import {
 	DropdownMenu,
@@ -17,9 +16,6 @@ interface DropdownNavProps {
 }
 
 export default function DropdownNav({ links, socials }: DropdownNavProps) {
-	// Get pathname to check which nav link is active page in map function
-	const pathname = usePathname();
-
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger className="outline-none focus:outline-none md:hidden">
@@ -29,26 +25,7 @@ export default function DropdownNav({ links, socials }: DropdownNavProps) {
 				align="end"
 				className="mt-2 bg-slate-950 border border-slate-800 px-3 py-2"
 			>
-				{links.map((link) => {
-					const isActive = pathname.endsWith(link.href);
-
-					return (
-						<DropdownMenuItem
-							asChild
-							key={link.text}
-							className="hover:bg-slate-800 cursor-pointer"
-						>
-							<Link
-								href={link.href}
-								className={`
-									${isActive ? "text-slate-100" : "text-slate-500"} w-full h-full
-								`}
-							>
-								{link.text}
-							</Link>
-						</DropdownMenuItem>
-					);
-				})}
+				<LinksSectionDropdown links={links} />
 				{socials.map((social) => {
 					return (
 						<DropdownMenuItem

@@ -1,5 +1,5 @@
 ### General
-- [ ] Create somewhat of an import schema
+- [x] Create somewhat of an import schema
 - [ ] Fix DropdownNav and break it into further components
 - [ ] Figure out better convention for font importing
 - [ ] Fix RightsideNav and break it into further components
