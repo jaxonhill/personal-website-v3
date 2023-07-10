@@ -2,9 +2,9 @@ import { NavElement, SocialInfo } from "@/types";
 import { poppins } from "@/app/layout";
 import Link from "next/link";
 import DropdownNav from "./dropdown/DropdownNav";
-import RightsideNav from "./RightsideNav";
+import RightsideNav from "./full-size/FullSizeNav";
 
-// Objects that hold name of link and href
+// Objects that hold name of links and hrefs for the site
 const links: NavElement[] = [
 	{
 		text: "Home",

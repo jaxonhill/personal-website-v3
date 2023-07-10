@@ -1,8 +1,7 @@
 "use client";
 
 import { NavElement, SocialInfo } from "@/types";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import LinksSectionFullSize from "./LinksSectionFullSize";
 
 interface RightsideNavProps {
 	links: NavElement[];
@@ -10,27 +9,9 @@ interface RightsideNavProps {
 }
 
 export default function RightsideNav({ links, socials }: RightsideNavProps) {
-	const pathname = usePathname();
-
 	return (
 		<div className="gap-6 items-center hidden md:flex">
-			{links.map((link) => {
-				const isActive = pathname.endsWith(link.href);
-
-				return (
-					<Link
-						href={link.href}
-						key={link.text}
-						className={`${
-							isActive
-								? "text-slate-100"
-								: "text-slate-500 hover:text-slate-100"
-						}`}
-					>
-						{link.text}
-					</Link>
-				);
-			})}
+			<LinksSectionFullSize links={links} />
 			{socials.map((social) => {
 				return (
 					<a
