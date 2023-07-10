@@ -1,28 +1,26 @@
+### General
+- [ ] Create somewhat of an import schema
+- [ ] Fix DropdownNav and break it into further components
+- [ ] Figure out better convention for font importing
+- [ ] Fix RightsideNav and break it into further components
+- [ ] Fix ProjectCard and break it into further components
+
 ### Navbar
-- [x] Add menu dropdown for mobile
-- [x] Add responsive breakpoint to have normal links
-- [x] Fix highlighting for main navbar
-- [x] Make logo go back to home also
-- [x] Add "socials" array of social objects with their logos
-- [x] Add socials as more options in dropdown nav
-- [x] Add socials dropdown to main page when size is large enough
-- [x] Add responsive
-- [x] Organize everything, condense
+- [ ] Add Framer Motion slight increase in size for clickable buttons
 
 ### Home
-- [x] Add main header
-- [x] Add secondary text
-- [x] Add main button to go to my projects
 - [ ] Add breakpoints for responsiveness
+- [ ] Add Framer Motion slight increase in size for clickable buttons
 
 ### Projects
-- [x] Create some sort of CMS with markdown and JSON
+- [ ] Fix Live Site button to be a ghost button instead, keep opacity thing
+- [ ] Add hover information to each technology thing
 - [ ] Add loading state for the content, make artifial promise to test this
-- [x] Add error state for the content, make artificial error to test this
 - [ ] Add heading
 - [ ] Add search bar
 - [ ] Add technologies drop down
-- [ ] Add project grid
-- [ ] Add project card with title, image, description
-- [ ] Add technologies hover thing
+- [ ] Add Framer Motion "pop" filtering and rearranging
+- [ ] Add Framer Motion slight increase in size for clickable buttons
+- [ ] Condense code, use DRY principles
+- [ ] Figure out if the AWS thing in config will be fine, or if you should add more or any thing
 - [ ] Add responsive breakpoints to instead have sidebar with searchbar and technologies dropdown

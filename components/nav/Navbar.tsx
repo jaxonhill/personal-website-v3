@@ -1,19 +1,10 @@
+import { NavElement, SocialInfo } from "@/types";
 import { poppins } from "@/app/layout";
+import Link from "next/link";
 import DropdownNav from "./DropdownNav";
 import RightsideNav from "./RightsideNav";
-import Link from "next/link";
 
-export type NavElement = {
-	text: string;
-	href: string;
-};
-
-export type SocialInfo = {
-	platform: string;
-	svgElement: JSX.Element;
-	href: string;
-};
-
+// Objects that hold name of link and href
 const links: NavElement[] = [
 	{
 		text: "Home",
@@ -25,6 +16,7 @@ const links: NavElement[] = [
 	},
 ];
 
+// Social media objects with names, hrefs, and svgs
 const socials: SocialInfo[] = [
 	{
 		platform: "Twitter",

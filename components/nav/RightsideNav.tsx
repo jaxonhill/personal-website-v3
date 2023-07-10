@@ -1,7 +1,7 @@
 "use client";
 
+import { NavElement, SocialInfo } from "@/types";
 import Link from "next/link";
-import { NavElement, SocialInfo } from "./Navbar";
 import { usePathname } from "next/navigation";
 
 interface RightsideNavProps {

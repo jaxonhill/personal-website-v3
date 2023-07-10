@@ -1,15 +1,15 @@
 "use client";
 
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { NavElement, SocialInfo } from "@/types";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { NavElement, SocialInfo } from "./Navbar";
-import { usePathname } from "next/navigation";
 
 interface DropdownNavProps {
 	links: NavElement[];

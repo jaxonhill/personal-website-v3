@@ -1,3 +1,4 @@
+import { Project } from "@/types";
 import { Client } from "@notionhq/client";
 
 type NotionResponse = {
@@ -49,15 +50,6 @@ type ProjectFromNotion = {
 		type: string;
 		title: Array<any>;
 	};
-};
-
-type Project = {
-	title: string;
-	description: string;
-	imageURL: string;
-	technologies: string[];
-	github_url: string | null;
-	live_site_url: string | null;
 };
 
 export async function getAllProjects() {
