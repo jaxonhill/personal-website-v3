@@ -14,11 +14,7 @@ export default function LinkButtonDropdown({
 	link,
 }: LinkDropdownButtonProps) {
 	return (
-		<DropdownMenuItem
-			asChild
-			key={link.text}
-			className="hover:bg-slate-800 cursor-pointer"
-		>
+		<DropdownMenuItem asChild className="hover:bg-slate-800 cursor-pointer">
 			<Link
 				href={link.href}
 				className={`

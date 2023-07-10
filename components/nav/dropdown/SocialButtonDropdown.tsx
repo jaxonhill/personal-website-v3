@@ -11,11 +11,7 @@ export default function SocialButtonDropdown({
 	social,
 }: SocialButtonDropdownProps) {
 	return (
-		<DropdownMenuItem
-			asChild
-			key={social.platform}
-			className="hover:bg-slate-800 cursor-pointer"
-		>
+		<DropdownMenuItem asChild className="hover:bg-slate-800 cursor-pointer">
 			<a
 				href={social.href}
 				target="_blank"

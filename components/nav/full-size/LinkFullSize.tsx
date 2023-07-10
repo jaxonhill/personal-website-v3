@@ -12,7 +12,6 @@ export default function LinkFullSize({ isActive, link }: LinkFullSizeProps) {
 	return (
 		<Link
 			href={link.href}
-			key={link.text}
 			className={`${
 				isActive
 					? "text-slate-100"
