@@ -1,3 +1,5 @@
+"use client";
+
 import { NavElement } from "@/types";
 import LinkButtonDropdown from "./LinkButtonDropdown";
 import { usePathname } from "next/navigation";
@@ -13,11 +15,11 @@ export default function LinksSectionDropdown({
 	const pathname = usePathname();
 
 	return (
-		<div>
+		<>
 			{links.map((link) => {
 				const isActive = pathname.endsWith(link.href);
 				return <LinkButtonDropdown isActive={isActive} link={link} />;
 			})}
-		</div>
+		</>
 	);
 }

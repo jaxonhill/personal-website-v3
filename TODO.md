@@ -1,9 +1,9 @@
 ### General
 - [x] Create somewhat of an import schema
-- [ ] Fix DropdownNav and break it into further components
-- [ ] Figure out better convention for font importing
+- [x] Fix DropdownNav and break it into further components
 - [ ] Fix RightsideNav and break it into further components
 - [ ] Fix ProjectCard and break it into further components
+- [ ] Figure out better convention for font importing
 
 ### Navbar
 - [ ] Add Framer Motion slight increase in size for clickable buttons
