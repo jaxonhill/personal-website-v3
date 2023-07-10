@@ -18,7 +18,13 @@ export default function LinksSectionDropdown({
 		<>
 			{links.map((link) => {
 				const isActive = pathname.endsWith(link.href);
-				return <LinkButtonDropdown isActive={isActive} link={link} />;
+				return (
+					<LinkButtonDropdown
+						key={link.text}
+						isActive={isActive}
+						link={link}
+					/>
+				);
 			})}
 		</>
 	);

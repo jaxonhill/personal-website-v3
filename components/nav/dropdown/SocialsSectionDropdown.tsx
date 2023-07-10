@@ -13,7 +13,12 @@ export default function SocialsSectionDropdown({
 	return (
 		<>
 			{socials.map((social) => {
-				return <SocialButtonDropdown social={social} />;
+				return (
+					<SocialButtonDropdown
+						key={social.platform}
+						social={social}
+					/>
+				);
 			})}
 		</>
 	);
