@@ -1,7 +1,7 @@
 ### General
 - [x] Create somewhat of an import schema
 - [x] Fix DropdownNav and break it into further components
-- [ ] Fix RightsideNav and break it into further components
+- [x] Fix RightsideNav and break it into further components
 - [ ] Fix ProjectCard and break it into further components
 - [ ] Figure out better convention for font importing
 
