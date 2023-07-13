@@ -1,5 +1,13 @@
+"use client";
+
 import { Project, Technologies } from "@/types";
 import Image from "next/image";
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 // Hash Table / Object for logo pngs and more information
 const technologies: Technologies = {
@@ -57,19 +65,28 @@ export default function TechnologiesOnCardSection({
 	project,
 }: TechnologiesOnCardSectionProps) {
 	return (
-		<div className="flex w-full gap-2 pb-4">
-			{project.technologies.map((technology) => {
-				return (
-					<div className="w-6 h-6 aspect-square relative">
-						<Image
-							src={technologies[technology].logoPath}
-							alt={technologies[technology].fullName}
-							fill
-							className=""
-						/>
-					</div>
-				);
-			})}
-		</div>
+		<TooltipProvider>
+			<div className="flex w-full gap-2 pb-4">
+				{project.technologies.map((technology) => {
+					return (
+						<Tooltip>
+							<TooltipTrigger>
+								<div className="w-6 h-6 aspect-square relative">
+									<Image
+										src={technologies[technology].logoPath}
+										alt={technologies[technology].fullName}
+										fill
+										className=""
+									/>
+								</div>
+							</TooltipTrigger>
+							<TooltipContent>
+								{technologies[technology].fullName}
+							</TooltipContent>
+						</Tooltip>
+					);
+				})}
+			</div>
+		</TooltipProvider>
 	);
 }

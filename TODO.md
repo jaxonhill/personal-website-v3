@@ -2,7 +2,7 @@
 - [x] Create somewhat of an import schema
 - [x] Fix DropdownNav and break it into further components
 - [x] Fix RightsideNav and break it into further components
-- [ ] Fix ProjectCard and break it into further components
+- [x] Fix ProjectCard and break it into further components
 - [ ] Figure out better convention for font importing
 
 ### Navbar
@@ -13,8 +13,8 @@
 - [ ] Add Framer Motion slight increase in size for clickable buttons
 
 ### Projects
-- [ ] Fix Live Site button to be a ghost button instead, keep opacity thing
-- [ ] Add hover information to each technology thing
+- [x] Fix Live Site button to be a ghost button instead, keep opacity thing
+- [x] Add hover information to each technology thing
 - [ ] Add loading state for the content, make artifial promise to test this
 - [ ] Add heading
 - [ ] Add search bar
