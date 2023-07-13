@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<div className="w-full flex flex-col gap-6 pt-36">
-			<p
+			<h1
 				className={`${poppins.className} font-bold text-4xl text-slate-100`}
 			>
 				Jaxon Hill
-			</p>
+			</h1>
 			<p className="text-slate-400 text-lg">
 				I'm a{" "}
 				<span className="text-sky-400">Computer Science student</span>{" "}

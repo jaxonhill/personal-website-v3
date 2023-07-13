@@ -10,7 +10,7 @@ export default async function Projects() {
 	const projects: Project[] = await getAllProjects();
 
 	return (
-		<main className="text-slate-100 pt-20">
+		<main className="text-slate-100 pt-8">
 			<div className="grid grid-flow-row grid-cols-1 w-full">
 				<ProjectsGrid projects={projects} />
 			</div>
