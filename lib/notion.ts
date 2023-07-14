@@ -53,6 +53,10 @@ type ProjectFromNotion = {
 };
 
 export async function getAllProjects() {
+	// Create a promise that resolves after 5 seconds
+	const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+	await delay(5000); // Add a 5-second delay
+
     let results: NotionResultsObject[];
     try {
     // Connect to Notion

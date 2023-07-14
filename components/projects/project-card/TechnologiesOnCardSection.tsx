@@ -80,7 +80,7 @@ export default function TechnologiesOnCardSection({
 									/>
 								</div>
 							</TooltipTrigger>
-							<TooltipContent>
+							<TooltipContent className="font-medium">
 								{technologies[technology].fullName}
 							</TooltipContent>
 						</Tooltip>
