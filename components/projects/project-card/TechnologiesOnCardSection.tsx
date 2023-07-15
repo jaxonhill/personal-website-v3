@@ -76,7 +76,6 @@ export default function TechnologiesOnCardSection({
 										src={technologies[technology].logoPath}
 										alt={technologies[technology].fullName}
 										fill
-										className=""
 									/>
 								</div>
 							</TooltipTrigger>

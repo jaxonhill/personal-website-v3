@@ -3,7 +3,7 @@
 - [x] Fix DropdownNav and break it into further components
 - [x] Fix RightsideNav and break it into further components
 - [x] Fix ProjectCard and break it into further components
-- [ ] Figure out better convention for font importing
+- [x] Figure out better convention for font importing
 
 ### Navbar
 - [ ] Add Framer Motion slight increase in size for clickable buttons
@@ -17,7 +17,8 @@
 - [x] Add hover information to each technology thing
 - [x] Add loading state for the content, make artifial promise to test this
 - [x] Add heading
-- [ ] Add search bar
+- [x] Add search bar
+- [ ] Fix technologies to make them have all information attached to them
 - [ ] Add technologies drop down
 - [ ] Add Framer Motion "pop" filtering and rearranging
 - [ ] Add Framer Motion slight increase in size for clickable buttons

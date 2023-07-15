@@ -15,8 +15,8 @@ function doesMeetCriteria(project: Project, searchInput: string): boolean {
 	if (searchInput === "") return true; // Empty searchInput should not filter
 
 	// If search criteria matches any technology, then return true immediately
-	for (const technology in project.technologies) {
-		if (technology.includes(searchInput)) {
+	for (let i = 0; i < project.technologies.length; i++) {
+		if (project.technologies[i].includes(searchInput)) {
 			return true;
 		}
 	}
