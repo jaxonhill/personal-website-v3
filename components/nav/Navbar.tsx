@@ -1,5 +1,5 @@
 import { NavElement, SocialInfo } from "@/types";
-import { poppins } from "@/app/layout";
+import { poppins } from "@/app/fonts";
 import Link from "next/link";
 import DropdownNav from "./dropdown/DropdownNav";
 import RightsideNav from "./full-size/FullSizeNav";
@@ -69,7 +69,7 @@ export default function Navbar() {
 				href={"/"}
 				className={`${poppins.className} text-xl text-slate-100 font-semibold`}
 			>
-				jaxonhill.xyz
+				chill10x
 			</Link>
 			<DropdownNav links={links} socials={socials} />
 			<RightsideNav links={links} socials={socials} />

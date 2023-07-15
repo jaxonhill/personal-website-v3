@@ -1,19 +1,17 @@
 import { Project } from "@/types";
 import { getAllProjects } from "@/lib/notion";
-import ProjectsGrid from "@/components/projects/ProjectsGrid";
+import ProjectsMainSection from "@/components/projects/ProjectsMainSection";
 
 // Revalidate this route every hour (fetch new data)
 export const revalidate = 3600;
 
 export default async function Projects() {
-	// Fetch projects
+	// Fetch projects directly from Notion database (need this to be server component for this)
 	const projects: Project[] = await getAllProjects();
 
 	return (
 		<main className="text-slate-100 pt-8">
-			<div className="grid grid-flow-row grid-cols-1 w-full">
-				<ProjectsGrid projects={projects} />
-			</div>
+			<ProjectsMainSection projects={projects} />
 		</main>
 	);
 }

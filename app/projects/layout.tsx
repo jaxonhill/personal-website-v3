@@ -1,4 +1,4 @@
-import { poppins } from "../layout";
+import { poppins } from "../fonts";
 
 export default function ProjectsLayout({
 	children,
