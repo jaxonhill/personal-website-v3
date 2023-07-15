@@ -1,4 +1,4 @@
-import { Project } from "@/types";
+import { Project, Technologies, Technology } from "@/types";
 import { Client } from "@notionhq/client";
 
 type NotionResponse = {
@@ -50,6 +50,65 @@ type ProjectFromNotion = {
 		type: string;
 		title: Array<any>;
 	};
+};
+
+// Hash Table / Object for logo pngs and more information
+const technologiesInfo: Technologies = {
+	nextjs: {
+		abbrev: "nextjs",
+		logoPath: "/images/nextjs.svg",
+		fullName: "Next.js",
+	},
+	react: {
+		abbrev: "react",
+		logoPath: "/images/react.png",
+		fullName: "React",
+	},
+	typescript: {
+		abbrev: "typescript",
+		logoPath: "/images/typescript.png",
+		fullName: "TypeScript",
+	},
+	tailwind: {
+		abbrev: "tailwind",
+		logoPath: "/images/tailwind.png",
+		fullName: "Tailwind CSS",
+	},
+	shadcn_ui: {
+		abbrev: "shadcn_ui",
+		logoPath: "/images/shadcn.jpg",
+		fullName: "shadcn ui",
+	},
+	framer_motion: {
+		abbrev: "framer_motion",
+		logoPath: "/images/framer.svg",
+		fullName: "Framer Motion",
+	},
+	vercel: {
+		abbrev: "vercel",
+		logoPath: "/images/vercel.svg",
+		fullName: "Vercel",
+	},
+	python: {
+		abbrev: "python",
+		logoPath: "/images/python.png",
+		fullName: "Python",
+	},
+	planetscale: {
+		abbrev: "planetscale",
+		logoPath: "/images/planetscale.svg",
+		fullName: "PlanetScale",
+	},
+	next_auth: {
+		abbrev: "next_auth",
+		logoPath: "/images/nextauth.png",
+		fullName: "NextAuth",
+	},
+	prisma: {
+		abbrev: "prisma",
+		logoPath: "/images/prisma.svg",
+		fullName: "Prisma",
+	},
 };
 
 export async function getAllProjects() {
@@ -116,9 +175,9 @@ function extractInformationIntoType(
 	// Image URL
 	const imageURL: string = projFromNotion.image.files[0].file.url;
 	// Technologies
-	const technologies: string[] = projFromNotion.technologies.multi_select.map(
+	const technologies: Technology[] = projFromNotion.technologies.multi_select.map(
 		(tech) => {
-			return tech.name;
+			return technologiesInfo[tech.name];
 		}
 	);
 	// Github URL

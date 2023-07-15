@@ -10,6 +10,7 @@ export type SocialInfo = {
 };
 
 export type Technology = {
+	abbrev: string;
 	logoPath: string;
 	fullName: string;
 };
@@ -22,7 +23,7 @@ export type Project = {
 	title: string;
 	description: string;
 	imageURL: string;
-	technologies: string[];
+	technologies: Technology[];
 	github_url: string | null;
 	live_site_url: string | null;
 };

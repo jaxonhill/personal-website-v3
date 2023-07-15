@@ -1,6 +1,6 @@
 "use client";
 
-import { Project } from "@/types";
+import { Project, Technology } from "@/types";
 import ProjectCard from "./project-card/ProjectCard";
 
 interface ProjectsGridProps {
@@ -16,7 +16,12 @@ function doesMeetCriteria(project: Project, searchInput: string): boolean {
 
 	// If search criteria matches any technology, then return true immediately
 	for (let i = 0; i < project.technologies.length; i++) {
-		if (project.technologies[i].includes(searchInput)) {
+		let currentTechnology: Technology = project.technologies[i];
+		if (
+			// Check abbreviation and full name
+			currentTechnology.abbrev.toLowerCase().includes(searchInput) ||
+			currentTechnology.fullName.toLowerCase().includes(searchInput)
+		) {
 			return true;
 		}
 	}

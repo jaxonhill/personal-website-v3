@@ -14,8 +14,6 @@ export default function ProjectsMainSection({
 }: ProjectsMainSectionProps) {
 	const [searchInput, setSearchInput] = useState<string>("");
 
-	console.log(searchInput);
-
 	return (
 		<>
 			<Searchbar
