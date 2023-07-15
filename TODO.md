@@ -15,8 +15,8 @@
 ### Projects
 - [x] Fix Live Site button to be a ghost button instead, keep opacity thing
 - [x] Add hover information to each technology thing
-- [ ] Add loading state for the content, make artifial promise to test this
-- [ ] Add heading
+- [x] Add loading state for the content, make artifial promise to test this
+- [x] Add heading
 - [ ] Add search bar
 - [ ] Add technologies drop down
 - [ ] Add Framer Motion "pop" filtering and rearranging

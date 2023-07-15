@@ -1,3 +1,5 @@
+"use client";
+
 import LiveSiteButton from "./LiveSiteButton";
 import GithubLinkButton from "./GithubLinkButton";
 import { Project } from "@/types";

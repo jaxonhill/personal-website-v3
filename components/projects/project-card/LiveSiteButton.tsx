@@ -1,3 +1,5 @@
+"use client";
+
 import { Project } from "@/types";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 

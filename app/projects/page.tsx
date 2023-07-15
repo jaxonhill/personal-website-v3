@@ -10,8 +10,8 @@ export default async function Projects() {
 	const projects: Project[] = await getAllProjects();
 
 	return (
-		<main className="text-slate-100 pt-8">
+		<>
 			<ProjectsMainSection projects={projects} />
-		</main>
+		</>
 	);
 }

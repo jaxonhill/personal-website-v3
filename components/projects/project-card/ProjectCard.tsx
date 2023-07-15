@@ -1,5 +1,7 @@
+"use client";
+
 import { Project } from "@/types";
-import { poppins } from "@/app/layout";
+import { poppins } from "@/app/fonts";
 import TechnologiesOnCardSection from "./TechnologiesOnCardSection";
 import Image from "next/image";
 import ButtonsSection from "./ButtonsSection";
