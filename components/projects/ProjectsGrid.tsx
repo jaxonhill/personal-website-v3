@@ -43,7 +43,7 @@ export default function ProjectsGrid({
 	searchInput,
 }: ProjectsGridProps) {
 	return (
-		<main className="grid grid-flow-row grid-cols-1 w-full">
+		<main className="grid gap-6 grid-flow-row grid-cols-1 w-full md:grid-cols-2 2xl:grid-cols-3">
 			{projects
 				.filter((project) => {
 					return doesMeetCriteria(project, searchInput);
