@@ -1,6 +1,6 @@
 "use client";
 
-import { Project, Technologies } from "@/types";
+import { Project } from "@/types";
 import Image from "next/image";
 import {
 	Tooltip,

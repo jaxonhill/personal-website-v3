@@ -18,10 +18,10 @@
 - [x] Add loading state for the content, make artifial promise to test this
 - [x] Add heading
 - [x] Add search bar
-- [ ] Fix technologies to make them have all information attached to them
+- [x] Fix technologies to make them have all information attached to them
 - [ ] Add technologies drop down
+- [ ] Add responsive breakpoints to instead have sidebar with searchbar and technologies dropdown
 - [ ] Add Framer Motion "pop" filtering and rearranging
 - [ ] Add Framer Motion slight increase in size for clickable buttons
 - [ ] Condense code, use DRY principles
 - [ ] Figure out if the AWS thing in config will be fine, or if you should add more or any thing
-- [ ] Add responsive breakpoints to instead have sidebar with searchbar and technologies dropdown
