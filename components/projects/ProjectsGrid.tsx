@@ -42,15 +42,26 @@ export default function ProjectsGrid({
 	projects,
 	searchInput,
 }: ProjectsGridProps) {
+	// Figure out which projects to display
+	const projectsToDisplay: Project[] = projects.filter((project) => {
+		return doesMeetCriteria(project, searchInput);
+	});
+
+	console.log(projectsToDisplay);
+
 	return (
-		<main className="grid gap-6 grid-flow-row grid-cols-1 w-full md:grid-cols-2 2xl:grid-cols-3">
-			{projects
-				.filter((project) => {
-					return doesMeetCriteria(project, searchInput);
-				})
-				.map((project) => {
-					return <ProjectCard project={project} />;
-				})}
-		</main>
+		<>
+			{projectsToDisplay.length === 0 ? (
+				<p className="w-full font-bold text-4xl text-center text-slate-600 pt-32">
+					No projects match the criteria.
+				</p>
+			) : (
+				<main className="grid gap-6 grid-flow-row grid-cols-1 w-full md:grid-cols-2 2xl:grid-cols-3">
+					{projectsToDisplay.map((project) => {
+						return <ProjectCard project={project} />;
+					})}
+				</main>
+			)}
+		</>
 	);
 }
