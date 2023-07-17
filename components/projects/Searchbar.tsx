@@ -16,7 +16,7 @@ export default function Searchbar({
 			className={`${searchClasses} text-slate-100 placeholder:text-slate-600`}
 			value={searchInput}
 			onChange={(e) => setSearchInput(e.target.value)}
-			placeholder="Search for a project"
+			placeholder="Search for a project or technology"
 		/>
 	);
 }

@@ -18,10 +18,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 					className={`${projectImageClasses} bg-gradient-to-br from-sky-400 to-blue-600`}
 				>
 					{/* <img
-					src={project.imageURL}
-					alt={project.title}
-					className={`${projectImageClasses} object-cover overflow-hidden rounded-lg`}
-				/> */}
+						src={project.imageURL}
+						alt={project.title}
+						className={`${projectImageClasses} object-cover overflow-hidden rounded-lg`}
+					/> */}
 				</div>
 				<p
 					className={`${poppins.className} text-2xl font-bold text-slate-100 pt-6 pb-4`}
