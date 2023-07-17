@@ -69,7 +69,7 @@ export default function Navbar() {
 				href={"/"}
 				className={`${poppins.className} text-xl text-slate-100 font-semibold`}
 			>
-				chill10x
+				jaxonhill.xyz
 			</Link>
 			<DropdownNav links={links} socials={socials} />
 			<RightsideNav links={links} socials={socials} />

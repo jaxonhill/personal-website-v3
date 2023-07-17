@@ -5,14 +5,10 @@
 - [ ] Create further folders for project components to organize better
 - [ ] Create a standardization between skeleton and card grid, card item, searchbar, technology dropdown
 - [ ] Add Framer Motion "pop" filtering and rearranging
-- [ ] Add Framer Motion slight increase in size for clickable buttons
 - [ ] Figure out if the AWS thing in config will be fine, or if you should add more or any thing
 
-### Navbar
-- [ ] Add Framer Motion slight increase in size for clickable buttons
-
 ### Home
-- [ ] Add Framer Motion slight increase in size for clickable buttons
+- [ ] Add Framer Motion staggered fade in
 
 ### Final Checks
 - [ ] Create further DRY implementation and make sure everything is standardized and easily maintainable
