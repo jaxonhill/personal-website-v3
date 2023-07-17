@@ -9,7 +9,10 @@ interface ProjectsGridProps {
 }
 
 // Checks if the project meets the search and filter criteria
-function doesMeetCriteria(project: Project, searchInput: string): boolean {
+function doesMeetSearchCriteria(
+	project: Project,
+	searchInput: string
+): boolean {
 	// Lowercase and strip the searchInput to sanitize it
 	searchInput = searchInput.toLowerCase().trim();
 	if (searchInput === "") return true; // Empty searchInput should not filter
@@ -44,10 +47,8 @@ export default function ProjectsGrid({
 }: ProjectsGridProps) {
 	// Figure out which projects to display
 	const projectsToDisplay: Project[] = projects.filter((project) => {
-		return doesMeetCriteria(project, searchInput);
+		return doesMeetSearchCriteria(project, searchInput);
 	});
-
-	console.log(projectsToDisplay);
 
 	return (
 		<>
@@ -58,7 +59,12 @@ export default function ProjectsGrid({
 			) : (
 				<main className="grid gap-6 grid-flow-row grid-cols-1 w-full md:grid-cols-2 2xl:grid-cols-3">
 					{projectsToDisplay.map((project) => {
-						return <ProjectCard project={project} />;
+						return (
+							<ProjectCard
+								key={project.title}
+								project={project}
+							/>
+						);
 					})}
 				</main>
 			)}

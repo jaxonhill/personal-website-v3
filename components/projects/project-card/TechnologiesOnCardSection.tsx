@@ -21,7 +21,7 @@ export default function TechnologiesOnCardSection({
 			<div className="flex w-full gap-2 pb-4">
 				{project.technologies.map((technology) => {
 					return (
-						<Tooltip>
+						<Tooltip key={technology.abbrev}>
 							<TooltipTrigger>
 								<div className="w-6 h-6 aspect-square relative">
 									<Image

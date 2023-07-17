@@ -1,5 +1,4 @@
 import { Skeleton } from "@/components/ui/skeleton";
-import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/outline";
 
 const dummyArrayThree = [0, 0, 0];
 const dummyArrayFive = [0, 0, 0, 0, 0];
@@ -14,8 +13,6 @@ export default function ProjectsLoading() {
 					className="w-3/4 max-w-sm bg-transparent border-2 border-slate-800 h-12 py-2 px-4 rounded-full placeholder:text-slate-800 focus:outline-none focus:ring-0 cursor-not-allowed"
 					placeholder="Search for a project"
 				/>
-				{/* Tech dropdown */}
-				<AdjustmentsHorizontalIcon className="w-12 h-12 text-slate-800 p-2 border-2 border-slate-800 rounded-full cursor-not-allowed" />
 			</div>
 			<div className="grid gap-6 grid-flow-row grid-cols-1 w-full md:grid-cols-2 2xl:grid-cols-3">
 				{dummyArrayThree.map(() => {
