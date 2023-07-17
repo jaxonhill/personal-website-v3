@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem" >
+    <img src="https://jaxonhill.xyz/images/personal_site.png" alt="Project Image"></img>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+    <h2 style="font-weight: bold">jaxonhill.xyz</h2>
+    <p style="text-align: center">An interactive, responsive portfolio website built with TypeScript, Next.js, Tailwind, and shadcn UI. I'm utilizing a Notion database to store project information, and then fetching this information using the Notion API and a server component. The site is hosted on Vercel.</p>
+    </div>
+</div>
 
-## Getting Started
+### Features:
+* User friendly, responsive design for every device
+* Interactive filtering of project section through a search bar to search for a technology or project name
+* Uses a Notion database as a CMS, and fetches the data through the Notion API and a server component
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The live site is at [jaxonhill.xyz](https://jaxonhill.xyz/) 
