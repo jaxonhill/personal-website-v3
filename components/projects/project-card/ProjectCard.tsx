@@ -3,6 +3,7 @@
 import { Project } from "@/types";
 import { poppins } from "@/app/fonts";
 import TechnologiesOnCardSection from "./TechnologiesOnCardSection";
+import { projectCardClasses, projectImageClasses } from "../shared_classes";
 import Image from "next/image";
 import ButtonsSection from "./ButtonsSection";
 
@@ -12,8 +13,10 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
 	return (
-		<div className="border-2 border-slate-800 p-6 rounded-2xl shadow-white">
-			<div className="w-full aspect-video relative rounded-lg bg-gradient-to-br from-sky-400 to-blue-600">
+		<div className={projectCardClasses}>
+			<div
+				className={`${projectImageClasses} bg-gradient-to-br from-sky-400 to-blue-600`}
+			>
 				{/* <Image
 					src={project.imageURL}
 					alt={project.title}

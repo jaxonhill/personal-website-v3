@@ -2,6 +2,7 @@
 
 import { Project, Technology } from "@/types";
 import ProjectCard from "./project-card/ProjectCard";
+import { projectGridClasses } from "./shared_classes";
 
 interface ProjectsGridProps {
 	projects: Project[];
@@ -57,7 +58,7 @@ export default function ProjectsGrid({
 					No projects match the criteria.
 				</p>
 			) : (
-				<main className="grid gap-6 grid-flow-row grid-cols-1 w-full md:grid-cols-2 2xl:grid-cols-3">
+				<main className={projectGridClasses}>
 					{projectsToDisplay.map((project) => {
 						return (
 							<ProjectCard
