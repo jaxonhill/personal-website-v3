@@ -173,8 +173,7 @@ function extractInformationIntoType(
 	const description: string =
 		projFromNotion.description.rich_text[0].plain_text;
 	// Image URL
-	// const imageURL: string = projFromNotion.image.files[0].file.url;
-	const imageURL: string = "";
+	const imageURL: string = projFromNotion.image.files[0].file.url;
 	// Technologies
 	const technologies: Technology[] = projFromNotion.technologies.multi_select.map(
 		(tech) => {

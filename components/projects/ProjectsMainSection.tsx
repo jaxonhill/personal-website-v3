@@ -8,12 +8,10 @@ import { useState } from "react";
 
 interface ProjectsMainSectionProps {
 	projects: Project[];
-	technologies: Technology[];
 }
 
 export default function ProjectsMainSection({
 	projects,
-	technologies,
 }: ProjectsMainSectionProps) {
 	const [searchInput, setSearchInput] = useState<string>("");
 

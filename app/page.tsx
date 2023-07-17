@@ -2,6 +2,14 @@ import { poppins } from "./fonts";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
+export const metadata = {
+	title: "Home",
+	openGraph: {
+		title: "Home",
+		description: "See the home page of jaxonhill.xyz",
+	},
+};
+
 export default function Home() {
 	return (
 		<div className="w-full flex flex-col pt-36 sm:items-center">
@@ -10,7 +18,7 @@ export default function Home() {
 			>
 				Jaxon Hill
 			</h1>
-			<p className="text-slate-400 mb-8 text-lg sm:text-center sm:text-xl sm:w-5/6 max-w-4xl">
+			<p className="text-slate-400 mb-8 text-lg sm:text-center sm:text-xl sm:w-5/6 max-w-2xl">
 				I'm a{" "}
 				<span className="text-sky-400">Computer Science student</span>{" "}
 				who is{" "}
