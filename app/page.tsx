@@ -6,11 +6,11 @@ export default function Home() {
 	return (
 		<div className="w-full flex flex-col pt-36 sm:items-center">
 			<h1
-				className={`${poppins.className} mb-4 font-bold text-4xl text-slate-100 sm:text-center sm:text-5xl md:text-6xl lg:text-7xl`}
+				className={`${poppins.className} mb-4 font-bold text-4xl text-slate-100 sm:text-center sm:text-5xl md:text-6xl`}
 			>
 				Jaxon Hill
 			</h1>
-			<p className="text-slate-400 mb-8 text-lg sm:text-center sm:text-xl sm:w-5/6 lg:text-2xl max-w-4xl">
+			<p className="text-slate-400 mb-8 text-lg sm:text-center sm:text-xl sm:w-5/6 max-w-4xl">
 				I'm a{" "}
 				<span className="text-sky-400">Computer Science student</span>{" "}
 				who is{" "}

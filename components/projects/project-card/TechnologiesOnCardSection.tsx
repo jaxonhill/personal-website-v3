@@ -1,7 +1,6 @@
 "use client";
 
 import { Project } from "@/types";
-import Image from "next/image";
 import {
 	Tooltip,
 	TooltipContent,
@@ -18,16 +17,15 @@ export default function TechnologiesOnCardSection({
 }: TechnologiesOnCardSectionProps) {
 	return (
 		<TooltipProvider>
-			<div className="flex w-full gap-2 pb-4">
+			<div className="flex w-full gap-2 pb-4 flex-wrap">
 				{project.technologies.map((technology) => {
 					return (
 						<Tooltip key={technology.abbrev}>
 							<TooltipTrigger>
 								<div className="w-6 h-6 aspect-square relative">
-									<Image
+									<img
 										src={technology.logoPath}
 										alt={technology.fullName}
-										fill
 									/>
 								</div>
 							</TooltipTrigger>

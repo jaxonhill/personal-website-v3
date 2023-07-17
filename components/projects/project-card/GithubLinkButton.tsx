@@ -13,7 +13,7 @@ export default function GithubLinkButton({ project }: GithubLinkButtonProps) {
 				<a
 					href={project.github_url}
 					target="_blank"
-					className="flex items-center gap-2 rounded-lg font-medium py-2 px-4 w-fit bg-slate-100 text-slate-950 hover:bg-slate-100/90"
+					className="flex items-center gap-2 rounded-lg font-medium py-2 px-4 w-fit bg-slate-100 text-slate-950 hover:bg-slate-300"
 				>
 					<p className="text-slate-950">Github</p>
 					<svg

@@ -7,6 +7,6 @@ export const projectGridClasses =
 	"grid gap-6 grid-flow-row grid-cols-1 w-full md:grid-cols-2 2xl:grid-cols-3";
 
 export const projectCardClasses =
-	"border-2 border-slate-800 p-6 rounded-2xl shadow-white";
+	"border-2 border-slate-800 p-6 rounded-2xl shadow-white ";
 
 export const projectImageClasses = "w-full aspect-video relative rounded-lg ";
