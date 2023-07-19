@@ -18,21 +18,21 @@ export default function Home() {
 			>
 				Jaxon Hill
 			</h1>
-			<p className="text-slate-400 mb-8 text-lg sm:text-center sm:text-xl sm:w-5/6 max-w-2xl">
+			<p className="text-slate-400 mb-8 text-lg sm:text-center sm:text-xl sm:w-5/6 max-w-4xl">
 				I'm a{" "}
 				<span className="text-sky-400">Computer Science student</span>{" "}
 				who is{" "}
 				<span className="text-sky-400">building side projects</span> on
 				the Internet with modern web development technologies. Check out
-				my projects to see what I'm working on.
+				my{" "}
+				<Link
+					className="text-sky-400 font-semibold hover:underline hover:cursor-pointer"
+					href={"/projects"}
+				>
+					projects
+				</Link>{" "}
+				to see what I'm working on.
 			</p>
-			<Link
-				className="flex items-center gap-2 rounded-lg font-medium py-2 px-4 w-fit bg-slate-100 text-slate-950 hover:bg-slate-100/90"
-				href={"/projects"}
-			>
-				<p className="sm:text-xl">See my projects</p>
-				<ArrowLongRightIcon className="text-slate-950 w-6 h-6" />
-			</Link>
 		</div>
 	);
 }
