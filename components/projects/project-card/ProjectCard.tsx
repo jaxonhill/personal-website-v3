@@ -14,15 +14,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 	return (
 		<div className={`${projectCardClasses} flex flex-col justify-between`}>
 			<div>
-				<div
-					className={`${projectImageClasses} bg-gradient-to-br from-sky-400 to-blue-600`}
-				>
-					{/* <img
+				{project.imageURL ? (
+					<img
 						src={project.imageURL}
 						alt={project.title}
 						className={`${projectImageClasses} object-cover overflow-hidden rounded-lg`}
-					/> */}
-				</div>
+					/>
+				) : (
+					<div
+						className={`${projectImageClasses} bg-gradient-to-br from-sky-400 to-blue-600`}
+					></div>
+				)}
 				<p
 					className={`${poppins.className} text-2xl font-bold text-slate-100 pt-6 pb-4`}
 				>

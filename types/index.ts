@@ -22,7 +22,7 @@ export type Technologies = {
 export type Project = {
 	title: string;
 	description: string;
-	imageURL: string;
+	imageURL: string | null;
 	technologies: Technology[];
 	github_url: string | null;
 	live_site_url: string | null;

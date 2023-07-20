@@ -1,4 +1,3 @@
-- [ ] Add function to generate a random color gradient for projects without an image (probably have to slightly change notion.ts and other files as well)
 - [ ] Create further DRY implementation and make sure everything is standardized and easily maintainable
 - [ ] Document all functions, document anything you don't understand
 - [ ] Change hosting off of Firebase and discontinue the CICD pipeline in the other project
